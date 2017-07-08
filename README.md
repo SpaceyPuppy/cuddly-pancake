@@ -9,3 +9,5 @@ The basics:
 Next, work on Contracts, Parts, Estimates. Then Wiki, Reports and possibly Calendar (although that could connect with the Calendar app possibly, yet to be seen.)
 
 An end goal would also be to allow payments to be processed via a processor integration and the Chip + Pin snap-on accessory, however this is yet to be seen if it is achievable.
+
+Another great thing would be if leads could be saved via the app to record interest in certain features, programs, services etc.
