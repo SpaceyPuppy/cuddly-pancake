@@ -16,14 +16,10 @@ namespace SmartDeviceProject1
             InitializeComponent();
         }
 
-        private void inputPanel1_EnabledChanged(object sender, EventArgs e)
+        private void menuExit_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void menuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

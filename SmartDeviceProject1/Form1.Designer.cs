@@ -35,29 +35,29 @@
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
-            this.menuItem3 = new System.Windows.Forms.MenuItem();
-            this.menuItem4 = new System.Windows.Forms.MenuItem();
-            this.menuItem5 = new System.Windows.Forms.MenuItem();
-            this.menuItem6 = new System.Windows.Forms.MenuItem();
-            this.menuItem7 = new System.Windows.Forms.MenuItem();
-            this.menuItem9 = new System.Windows.Forms.MenuItem();
-            this.menuItem8 = new System.Windows.Forms.MenuItem();
             this.menuItem10 = new System.Windows.Forms.MenuItem();
             this.menuItem11 = new System.Windows.Forms.MenuItem();
+            this.menuItem15 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItem12 = new System.Windows.Forms.MenuItem();
             this.menuItem13 = new System.Windows.Forms.MenuItem();
             this.menuItem14 = new System.Windows.Forms.MenuItem();
-            this.menuItem15 = new System.Windows.Forms.MenuItem();
-            this.menuItem16 = new System.Windows.Forms.MenuItem();
-            this.menuItem17 = new System.Windows.Forms.MenuItem();
-            this.menuItem18 = new System.Windows.Forms.MenuItem();
-            this.menuItem19 = new System.Windows.Forms.MenuItem();
-            this.menuItem20 = new System.Windows.Forms.MenuItem();
-            this.menuItem21 = new System.Windows.Forms.MenuItem();
-            this.menuItem22 = new System.Windows.Forms.MenuItem();
-            this.menuItem23 = new System.Windows.Forms.MenuItem();
-            this.menuItem24 = new System.Windows.Forms.MenuItem();
-            this.menuItem25 = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.menuNewAsset = new System.Windows.Forms.MenuItem();
+            this.menuSearchAsset = new System.Windows.Forms.MenuItem();
+            this.menuListAsset = new System.Windows.Forms.MenuItem();
+            this.menuSearchInventory = new System.Windows.Forms.MenuItem();
+            this.menuItem6 = new System.Windows.Forms.MenuItem();
+            this.menuNewEstimate = new System.Windows.Forms.MenuItem();
+            this.menuSearchEstimate = new System.Windows.Forms.MenuItem();
+            this.menuListEstimate = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
+            this.menuNewInvoice = new System.Windows.Forms.MenuItem();
+            this.menuSearchInvoice = new System.Windows.Forms.MenuItem();
+            this.menuListInvoice = new System.Windows.Forms.MenuItem();
+            this.menuSettings = new System.Windows.Forms.MenuItem();
+            this.menuExit = new System.Windows.Forms.MenuItem();
+            this.menuItem8 = new System.Windows.Forms.MenuItem();
             this.menuItem26 = new System.Windows.Forms.MenuItem();
             this.menuItem27 = new System.Windows.Forms.MenuItem();
             this.menuItem28 = new System.Windows.Forms.MenuItem();
@@ -66,9 +66,9 @@
             // customers
             // 
             this.customers.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.customers.Location = new System.Drawing.Point(43, 432);
+            this.customers.Location = new System.Drawing.Point(22, 216);
             this.customers.Name = "customers";
-            this.customers.Size = new System.Drawing.Size(394, 124);
+            this.customers.Size = new System.Drawing.Size(197, 62);
             this.customers.TabIndex = 0;
             this.customers.Text = "Customers";
             // 
@@ -76,27 +76,27 @@
             // 
             this.tickets.BackColor = System.Drawing.SystemColors.ControlDark;
             this.tickets.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.tickets.Location = new System.Drawing.Point(43, 33);
+            this.tickets.Location = new System.Drawing.Point(22, 17);
             this.tickets.Name = "tickets";
-            this.tickets.Size = new System.Drawing.Size(394, 124);
+            this.tickets.Size = new System.Drawing.Size(197, 62);
             this.tickets.TabIndex = 1;
             this.tickets.Text = "Tickets";
             // 
             // assets
             // 
             this.assets.DialogResult = System.Windows.Forms.DialogResult.Abort;
-            this.assets.Location = new System.Drawing.Point(43, 299);
+            this.assets.Location = new System.Drawing.Point(22, 150);
             this.assets.Name = "assets";
-            this.assets.Size = new System.Drawing.Size(394, 124);
+            this.assets.Size = new System.Drawing.Size(197, 62);
             this.assets.TabIndex = 2;
             this.assets.Text = "Assets";
             // 
             // inventory
             // 
             this.inventory.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.inventory.Location = new System.Drawing.Point(43, 166);
+            this.inventory.Location = new System.Drawing.Point(22, 83);
             this.inventory.Name = "inventory";
-            this.inventory.Size = new System.Drawing.Size(394, 124);
+            this.inventory.Size = new System.Drawing.Size(197, 62);
             this.inventory.TabIndex = 4;
             this.inventory.Text = "Inventory";
             // 
@@ -110,13 +110,12 @@
             this.menuItem1.MenuItems.Add(this.menuItem2);
             this.menuItem1.MenuItems.Add(this.menuItem3);
             this.menuItem1.MenuItems.Add(this.menuItem4);
-            this.menuItem1.MenuItems.Add(this.menuItem5);
+            this.menuItem1.MenuItems.Add(this.menuSearchInventory);
             this.menuItem1.MenuItems.Add(this.menuItem6);
             this.menuItem1.MenuItems.Add(this.menuItem7);
-            this.menuItem1.MenuItems.Add(this.menuItem9);
-            this.menuItem1.MenuItems.Add(this.menuItem25);
+            this.menuItem1.MenuItems.Add(this.menuSettings);
+            this.menuItem1.MenuItems.Add(this.menuExit);
             this.menuItem1.Text = "Menu";
-            this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
             // 
             // menuItem2
             // 
@@ -125,49 +124,6 @@
             this.menuItem2.MenuItems.Add(this.menuItem15);
             this.menuItem2.Text = "Tickets";
             // 
-            // menuItem3
-            // 
-            this.menuItem3.MenuItems.Add(this.menuItem12);
-            this.menuItem3.MenuItems.Add(this.menuItem13);
-            this.menuItem3.MenuItems.Add(this.menuItem14);
-            this.menuItem3.Text = "Customers";
-            // 
-            // menuItem4
-            // 
-            this.menuItem4.MenuItems.Add(this.menuItem16);
-            this.menuItem4.MenuItems.Add(this.menuItem17);
-            this.menuItem4.MenuItems.Add(this.menuItem18);
-            this.menuItem4.Text = "Assets";
-            // 
-            // menuItem5
-            // 
-            this.menuItem5.Text = "Inventory Search";
-            // 
-            // menuItem6
-            // 
-            this.menuItem6.MenuItems.Add(this.menuItem19);
-            this.menuItem6.MenuItems.Add(this.menuItem20);
-            this.menuItem6.MenuItems.Add(this.menuItem21);
-            this.menuItem6.Text = "Estimates";
-            // 
-            // menuItem7
-            // 
-            this.menuItem7.MenuItems.Add(this.menuItem22);
-            this.menuItem7.MenuItems.Add(this.menuItem23);
-            this.menuItem7.MenuItems.Add(this.menuItem24);
-            this.menuItem7.Text = "Invoices";
-            // 
-            // menuItem9
-            // 
-            this.menuItem9.Text = "Settings";
-            // 
-            // menuItem8
-            // 
-            this.menuItem8.MenuItems.Add(this.menuItem26);
-            this.menuItem8.MenuItems.Add(this.menuItem27);
-            this.menuItem8.MenuItems.Add(this.menuItem28);
-            this.menuItem8.Text = "Scan";
-            // 
             // menuItem10
             // 
             this.menuItem10.Text = "New";
@@ -175,6 +131,17 @@
             // menuItem11
             // 
             this.menuItem11.Text = "Search";
+            // 
+            // menuItem15
+            // 
+            this.menuItem15.Text = "View List";
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.MenuItems.Add(this.menuItem12);
+            this.menuItem3.MenuItems.Add(this.menuItem13);
+            this.menuItem3.MenuItems.Add(this.menuItem14);
+            this.menuItem3.Text = "Customers";
             // 
             // menuItem12
             // 
@@ -188,49 +155,82 @@
             // 
             this.menuItem14.Text = "View List";
             // 
-            // menuItem15
+            // menuItem4
             // 
-            this.menuItem15.Text = "View List";
+            this.menuItem4.MenuItems.Add(this.menuNewAsset);
+            this.menuItem4.MenuItems.Add(this.menuSearchAsset);
+            this.menuItem4.MenuItems.Add(this.menuListAsset);
+            this.menuItem4.Text = "Assets";
             // 
-            // menuItem16
+            // menuNewAsset
             // 
-            this.menuItem16.Text = "New";
+            this.menuNewAsset.Text = "New";
             // 
-            // menuItem17
+            // menuSearchAsset
             // 
-            this.menuItem17.Text = "Search";
+            this.menuSearchAsset.Text = "Search";
             // 
-            // menuItem18
+            // menuListAsset
             // 
-            this.menuItem18.Text = "View List";
+            this.menuListAsset.Text = "View List";
             // 
-            // menuItem19
+            // menuSearchInventory
             // 
-            this.menuItem19.Text = "New";
+            this.menuSearchInventory.Text = "Inventory Search";
             // 
-            // menuItem20
+            // menuItem6
             // 
-            this.menuItem20.Text = "Search";
+            this.menuItem6.MenuItems.Add(this.menuNewEstimate);
+            this.menuItem6.MenuItems.Add(this.menuSearchEstimate);
+            this.menuItem6.MenuItems.Add(this.menuListEstimate);
+            this.menuItem6.Text = "Estimate";
             // 
-            // menuItem21
+            // menuNewEstimate
             // 
-            this.menuItem21.Text = "View List";
+            this.menuNewEstimate.Text = "New";
             // 
-            // menuItem22
+            // menuSearchEstimate
             // 
-            this.menuItem22.Text = "New";
+            this.menuSearchEstimate.Text = "Search";
             // 
-            // menuItem23
+            // menuListEstimate
             // 
-            this.menuItem23.Text = "Search";
+            this.menuListEstimate.Text = "View List";
             // 
-            // menuItem24
+            // menuItem7
             // 
-            this.menuItem24.Text = "View List";
+            this.menuItem7.MenuItems.Add(this.menuNewInvoice);
+            this.menuItem7.MenuItems.Add(this.menuSearchInvoice);
+            this.menuItem7.MenuItems.Add(this.menuListInvoice);
+            this.menuItem7.Text = "Invoice";
             // 
-            // menuItem25
+            // menuNewInvoice
             // 
-            this.menuItem25.Text = "Exit App";
+            this.menuNewInvoice.Text = "New";
+            // 
+            // menuSearchInvoice
+            // 
+            this.menuSearchInvoice.Text = "Search";
+            // 
+            // menuListInvoice
+            // 
+            this.menuListInvoice.Text = "View List";
+            // 
+            // menuSettings
+            // 
+            this.menuSettings.Text = "Settings";
+            // 
+            // menuExit
+            // 
+            this.menuExit.Text = "Exit App";
+            this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
+            // 
+            // menuItem8
+            // 
+            this.menuItem8.MenuItems.Add(this.menuItem26);
+            this.menuItem8.MenuItems.Add(this.menuItem27);
+            this.menuItem8.MenuItems.Add(this.menuItem28);
+            this.menuItem8.Text = "Scan";
             // 
             // menuItem26
             // 
@@ -246,10 +246,10 @@
             // 
             // homeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(480, 588);
+            this.ClientSize = new System.Drawing.Size(240, 294);
             this.Controls.Add(this.inventory);
             this.Controls.Add(this.assets);
             this.Controls.Add(this.tickets);
@@ -275,27 +275,27 @@
         private System.Windows.Forms.MenuItem menuItem2;
         private System.Windows.Forms.MenuItem menuItem3;
         private System.Windows.Forms.MenuItem menuItem4;
-        private System.Windows.Forms.MenuItem menuItem5;
+        private System.Windows.Forms.MenuItem menuSearchInventory;
         private System.Windows.Forms.MenuItem menuItem6;
         private System.Windows.Forms.MenuItem menuItem7;
         private System.Windows.Forms.MenuItem menuItem8;
-        private System.Windows.Forms.MenuItem menuItem9;
+        private System.Windows.Forms.MenuItem menuSettings;
         private System.Windows.Forms.MenuItem menuItem10;
         private System.Windows.Forms.MenuItem menuItem11;
         private System.Windows.Forms.MenuItem menuItem15;
         private System.Windows.Forms.MenuItem menuItem12;
         private System.Windows.Forms.MenuItem menuItem13;
         private System.Windows.Forms.MenuItem menuItem14;
-        private System.Windows.Forms.MenuItem menuItem16;
-        private System.Windows.Forms.MenuItem menuItem17;
-        private System.Windows.Forms.MenuItem menuItem18;
-        private System.Windows.Forms.MenuItem menuItem19;
-        private System.Windows.Forms.MenuItem menuItem20;
-        private System.Windows.Forms.MenuItem menuItem21;
-        private System.Windows.Forms.MenuItem menuItem22;
-        private System.Windows.Forms.MenuItem menuItem23;
-        private System.Windows.Forms.MenuItem menuItem24;
-        private System.Windows.Forms.MenuItem menuItem25;
+        private System.Windows.Forms.MenuItem menuNewAsset;
+        private System.Windows.Forms.MenuItem menuSearchAsset;
+        private System.Windows.Forms.MenuItem menuListAsset;
+        private System.Windows.Forms.MenuItem menuNewEstimate;
+        private System.Windows.Forms.MenuItem menuSearchEstimate;
+        private System.Windows.Forms.MenuItem menuListEstimate;
+        private System.Windows.Forms.MenuItem menuNewInvoice;
+        private System.Windows.Forms.MenuItem menuSearchInvoice;
+        private System.Windows.Forms.MenuItem menuListInvoice;
+        private System.Windows.Forms.MenuItem menuExit;
         private System.Windows.Forms.MenuItem menuItem26;
         private System.Windows.Forms.MenuItem menuItem27;
         private System.Windows.Forms.MenuItem menuItem28;
