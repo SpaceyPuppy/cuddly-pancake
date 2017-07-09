@@ -1,0 +1,8 @@
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\CuddlyPancake.exe
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\CuddlyPancake.pdb
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.homeForm.resources
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\CuddlyPancake.Properties.Resources.resources
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\CuddlyPancake.exe
+C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\CuddlyPancake.pdb
