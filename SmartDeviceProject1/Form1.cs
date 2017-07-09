@@ -20,5 +20,10 @@ namespace SmartDeviceProject1
         {
 
         }
+
+        private void menuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
