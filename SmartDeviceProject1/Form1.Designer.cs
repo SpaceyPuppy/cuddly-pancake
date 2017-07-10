@@ -28,193 +28,193 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.customers = new System.Windows.Forms.Button();
-            this.tickets = new System.Windows.Forms.Button();
-            this.assets = new System.Windows.Forms.Button();
-            this.inventory = new System.Windows.Forms.Button();
+            this.customersButton = new System.Windows.Forms.Button();
+            this.ticketsButton = new System.Windows.Forms.Button();
+            this.assetsButton = new System.Windows.Forms.Button();
+            this.inventoryButton = new System.Windows.Forms.Button();
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
-            this.menuItem10 = new System.Windows.Forms.MenuItem();
-            this.menuItem11 = new System.Windows.Forms.MenuItem();
-            this.menuItem15 = new System.Windows.Forms.MenuItem();
-            this.menuItem3 = new System.Windows.Forms.MenuItem();
-            this.menuItem12 = new System.Windows.Forms.MenuItem();
-            this.menuItem13 = new System.Windows.Forms.MenuItem();
-            this.menuItem14 = new System.Windows.Forms.MenuItem();
-            this.menuItem4 = new System.Windows.Forms.MenuItem();
-            this.menuNewAsset = new System.Windows.Forms.MenuItem();
-            this.menuSearchAsset = new System.Windows.Forms.MenuItem();
-            this.menuListAsset = new System.Windows.Forms.MenuItem();
-            this.menuSearchInventory = new System.Windows.Forms.MenuItem();
-            this.menuItem6 = new System.Windows.Forms.MenuItem();
-            this.menuNewEstimate = new System.Windows.Forms.MenuItem();
-            this.menuSearchEstimate = new System.Windows.Forms.MenuItem();
-            this.menuListEstimate = new System.Windows.Forms.MenuItem();
-            this.menuItem7 = new System.Windows.Forms.MenuItem();
-            this.menuNewInvoice = new System.Windows.Forms.MenuItem();
-            this.menuSearchInvoice = new System.Windows.Forms.MenuItem();
-            this.menuListInvoice = new System.Windows.Forms.MenuItem();
+            this.menu = new System.Windows.Forms.MenuItem();
+            this.menuTicket = new System.Windows.Forms.MenuItem();
+            this.menuTicketNew = new System.Windows.Forms.MenuItem();
+            this.menuTicketSearch = new System.Windows.Forms.MenuItem();
+            this.menuTicketList = new System.Windows.Forms.MenuItem();
+            this.menuCust = new System.Windows.Forms.MenuItem();
+            this.menuCustNew = new System.Windows.Forms.MenuItem();
+            this.menuCustSearch = new System.Windows.Forms.MenuItem();
+            this.menuCustList = new System.Windows.Forms.MenuItem();
+            this.menuAsset = new System.Windows.Forms.MenuItem();
+            this.menuAssetNew = new System.Windows.Forms.MenuItem();
+            this.menuAssetSearch = new System.Windows.Forms.MenuItem();
+            this.menuAssetList = new System.Windows.Forms.MenuItem();
+            this.menuInventory = new System.Windows.Forms.MenuItem();
+            this.menuEstimate = new System.Windows.Forms.MenuItem();
+            this.menuEstimateNew = new System.Windows.Forms.MenuItem();
+            this.menuEstimateSearch = new System.Windows.Forms.MenuItem();
+            this.menuEstimateList = new System.Windows.Forms.MenuItem();
+            this.menuInvoice = new System.Windows.Forms.MenuItem();
+            this.menuInvoiceNew = new System.Windows.Forms.MenuItem();
+            this.menuInvoiceSearch = new System.Windows.Forms.MenuItem();
+            this.menuInvoiceList = new System.Windows.Forms.MenuItem();
             this.menuSettings = new System.Windows.Forms.MenuItem();
             this.menuExit = new System.Windows.Forms.MenuItem();
-            this.menuItem8 = new System.Windows.Forms.MenuItem();
-            this.menuItem26 = new System.Windows.Forms.MenuItem();
-            this.menuItem27 = new System.Windows.Forms.MenuItem();
-            this.menuItem28 = new System.Windows.Forms.MenuItem();
+            this.scanMenu = new System.Windows.Forms.MenuItem();
+            this.scanMenuTicket = new System.Windows.Forms.MenuItem();
+            this.scanMenuAsset = new System.Windows.Forms.MenuItem();
+            this.scanMenuCustomer = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
-            // customers
+            // customersButton
             // 
-            this.customers.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.customers.Location = new System.Drawing.Point(22, 216);
-            this.customers.Name = "customers";
-            this.customers.Size = new System.Drawing.Size(197, 62);
-            this.customers.TabIndex = 0;
-            this.customers.Text = "Customers";
+            this.customersButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.customersButton.Location = new System.Drawing.Point(22, 216);
+            this.customersButton.Name = "customersButton";
+            this.customersButton.Size = new System.Drawing.Size(197, 62);
+            this.customersButton.TabIndex = 0;
+            this.customersButton.Text = "Customers";
             // 
-            // tickets
+            // ticketsButton
             // 
-            this.tickets.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tickets.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.tickets.Location = new System.Drawing.Point(22, 17);
-            this.tickets.Name = "tickets";
-            this.tickets.Size = new System.Drawing.Size(197, 62);
-            this.tickets.TabIndex = 1;
-            this.tickets.Text = "Tickets";
+            this.ticketsButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ticketsButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ticketsButton.Location = new System.Drawing.Point(22, 17);
+            this.ticketsButton.Name = "ticketsButton";
+            this.ticketsButton.Size = new System.Drawing.Size(197, 62);
+            this.ticketsButton.TabIndex = 1;
+            this.ticketsButton.Text = "Tickets";
             // 
-            // assets
+            // assetsButton
             // 
-            this.assets.DialogResult = System.Windows.Forms.DialogResult.Abort;
-            this.assets.Location = new System.Drawing.Point(22, 150);
-            this.assets.Name = "assets";
-            this.assets.Size = new System.Drawing.Size(197, 62);
-            this.assets.TabIndex = 2;
-            this.assets.Text = "Assets";
+            this.assetsButton.DialogResult = System.Windows.Forms.DialogResult.Abort;
+            this.assetsButton.Location = new System.Drawing.Point(22, 150);
+            this.assetsButton.Name = "assetsButton";
+            this.assetsButton.Size = new System.Drawing.Size(197, 62);
+            this.assetsButton.TabIndex = 2;
+            this.assetsButton.Text = "Assets";
             // 
-            // inventory
+            // inventoryButton
             // 
-            this.inventory.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.inventory.Location = new System.Drawing.Point(22, 83);
-            this.inventory.Name = "inventory";
-            this.inventory.Size = new System.Drawing.Size(197, 62);
-            this.inventory.TabIndex = 4;
-            this.inventory.Text = "Inventory";
+            this.inventoryButton.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.inventoryButton.Location = new System.Drawing.Point(22, 83);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Size = new System.Drawing.Size(197, 62);
+            this.inventoryButton.TabIndex = 4;
+            this.inventoryButton.Text = "Inventory";
             // 
             // mainMenu1
             // 
-            this.mainMenu1.MenuItems.Add(this.menuItem1);
-            this.mainMenu1.MenuItems.Add(this.menuItem8);
+            this.mainMenu1.MenuItems.Add(this.menu);
+            this.mainMenu1.MenuItems.Add(this.scanMenu);
             // 
-            // menuItem1
+            // menu
             // 
-            this.menuItem1.MenuItems.Add(this.menuItem2);
-            this.menuItem1.MenuItems.Add(this.menuItem3);
-            this.menuItem1.MenuItems.Add(this.menuItem4);
-            this.menuItem1.MenuItems.Add(this.menuSearchInventory);
-            this.menuItem1.MenuItems.Add(this.menuItem6);
-            this.menuItem1.MenuItems.Add(this.menuItem7);
-            this.menuItem1.MenuItems.Add(this.menuSettings);
-            this.menuItem1.MenuItems.Add(this.menuExit);
-            this.menuItem1.Text = "Menu";
+            this.menu.MenuItems.Add(this.menuTicket);
+            this.menu.MenuItems.Add(this.menuCust);
+            this.menu.MenuItems.Add(this.menuAsset);
+            this.menu.MenuItems.Add(this.menuInventory);
+            this.menu.MenuItems.Add(this.menuEstimate);
+            this.menu.MenuItems.Add(this.menuInvoice);
+            this.menu.MenuItems.Add(this.menuSettings);
+            this.menu.MenuItems.Add(this.menuExit);
+            this.menu.Text = "Menu";
             // 
-            // menuItem2
+            // menuTicket
             // 
-            this.menuItem2.MenuItems.Add(this.menuItem10);
-            this.menuItem2.MenuItems.Add(this.menuItem11);
-            this.menuItem2.MenuItems.Add(this.menuItem15);
-            this.menuItem2.Text = "Tickets";
+            this.menuTicket.MenuItems.Add(this.menuTicketNew);
+            this.menuTicket.MenuItems.Add(this.menuTicketSearch);
+            this.menuTicket.MenuItems.Add(this.menuTicketList);
+            this.menuTicket.Text = "Tickets";
             // 
-            // menuItem10
+            // menuTicketNew
             // 
-            this.menuItem10.Text = "New";
+            this.menuTicketNew.Text = "New";
             // 
-            // menuItem11
+            // menuTicketSearch
             // 
-            this.menuItem11.Text = "Search";
+            this.menuTicketSearch.Text = "Search";
             // 
-            // menuItem15
+            // menuTicketList
             // 
-            this.menuItem15.Text = "View List";
+            this.menuTicketList.Text = "View List";
             // 
-            // menuItem3
+            // menuCust
             // 
-            this.menuItem3.MenuItems.Add(this.menuItem12);
-            this.menuItem3.MenuItems.Add(this.menuItem13);
-            this.menuItem3.MenuItems.Add(this.menuItem14);
-            this.menuItem3.Text = "Customers";
+            this.menuCust.MenuItems.Add(this.menuCustNew);
+            this.menuCust.MenuItems.Add(this.menuCustSearch);
+            this.menuCust.MenuItems.Add(this.menuCustList);
+            this.menuCust.Text = "Customers";
             // 
-            // menuItem12
+            // menuCustNew
             // 
-            this.menuItem12.Text = "New";
+            this.menuCustNew.Text = "New";
             // 
-            // menuItem13
+            // menuCustSearch
             // 
-            this.menuItem13.Text = "Search";
+            this.menuCustSearch.Text = "Search";
             // 
-            // menuItem14
+            // menuCustList
             // 
-            this.menuItem14.Text = "View List";
+            this.menuCustList.Text = "View List";
             // 
-            // menuItem4
+            // menuAsset
             // 
-            this.menuItem4.MenuItems.Add(this.menuNewAsset);
-            this.menuItem4.MenuItems.Add(this.menuSearchAsset);
-            this.menuItem4.MenuItems.Add(this.menuListAsset);
-            this.menuItem4.Text = "Assets";
+            this.menuAsset.MenuItems.Add(this.menuAssetNew);
+            this.menuAsset.MenuItems.Add(this.menuAssetSearch);
+            this.menuAsset.MenuItems.Add(this.menuAssetList);
+            this.menuAsset.Text = "Assets";
             // 
-            // menuNewAsset
+            // menuAssetNew
             // 
-            this.menuNewAsset.Text = "New";
+            this.menuAssetNew.Text = "New";
             // 
-            // menuSearchAsset
+            // menuAssetSearch
             // 
-            this.menuSearchAsset.Text = "Search";
+            this.menuAssetSearch.Text = "Search";
             // 
-            // menuListAsset
+            // menuAssetList
             // 
-            this.menuListAsset.Text = "View List";
+            this.menuAssetList.Text = "View List";
             // 
-            // menuSearchInventory
+            // menuInventory
             // 
-            this.menuSearchInventory.Text = "Inventory Search";
+            this.menuInventory.Text = "Inventory Search";
             // 
-            // menuItem6
+            // menuEstimate
             // 
-            this.menuItem6.MenuItems.Add(this.menuNewEstimate);
-            this.menuItem6.MenuItems.Add(this.menuSearchEstimate);
-            this.menuItem6.MenuItems.Add(this.menuListEstimate);
-            this.menuItem6.Text = "Estimate";
+            this.menuEstimate.MenuItems.Add(this.menuEstimateNew);
+            this.menuEstimate.MenuItems.Add(this.menuEstimateSearch);
+            this.menuEstimate.MenuItems.Add(this.menuEstimateList);
+            this.menuEstimate.Text = "Estimate";
             // 
-            // menuNewEstimate
+            // menuEstimateNew
             // 
-            this.menuNewEstimate.Text = "New";
+            this.menuEstimateNew.Text = "New";
             // 
-            // menuSearchEstimate
+            // menuEstimateSearch
             // 
-            this.menuSearchEstimate.Text = "Search";
+            this.menuEstimateSearch.Text = "Search";
             // 
-            // menuListEstimate
+            // menuEstimateList
             // 
-            this.menuListEstimate.Text = "View List";
+            this.menuEstimateList.Text = "View List";
             // 
-            // menuItem7
+            // menuInvoice
             // 
-            this.menuItem7.MenuItems.Add(this.menuNewInvoice);
-            this.menuItem7.MenuItems.Add(this.menuSearchInvoice);
-            this.menuItem7.MenuItems.Add(this.menuListInvoice);
-            this.menuItem7.Text = "Invoice";
+            this.menuInvoice.MenuItems.Add(this.menuInvoiceNew);
+            this.menuInvoice.MenuItems.Add(this.menuInvoiceSearch);
+            this.menuInvoice.MenuItems.Add(this.menuInvoiceList);
+            this.menuInvoice.Text = "Invoice";
             // 
-            // menuNewInvoice
+            // menuInvoiceNew
             // 
-            this.menuNewInvoice.Text = "New";
+            this.menuInvoiceNew.Text = "New";
             // 
-            // menuSearchInvoice
+            // menuInvoiceSearch
             // 
-            this.menuSearchInvoice.Text = "Search";
+            this.menuInvoiceSearch.Text = "Search";
             // 
-            // menuListInvoice
+            // menuInvoiceList
             // 
-            this.menuListInvoice.Text = "View List";
+            this.menuInvoiceList.Text = "View List";
             // 
             // menuSettings
             // 
@@ -223,26 +223,25 @@
             // menuExit
             // 
             this.menuExit.Text = "Exit App";
-            this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
-            // menuItem8
+            // scanMenu
             // 
-            this.menuItem8.MenuItems.Add(this.menuItem26);
-            this.menuItem8.MenuItems.Add(this.menuItem27);
-            this.menuItem8.MenuItems.Add(this.menuItem28);
-            this.menuItem8.Text = "Scan";
+            this.scanMenu.MenuItems.Add(this.scanMenuTicket);
+            this.scanMenu.MenuItems.Add(this.scanMenuAsset);
+            this.scanMenu.MenuItems.Add(this.scanMenuCustomer);
+            this.scanMenu.Text = "Scan";
             // 
-            // menuItem26
+            // scanMenuTicket
             // 
-            this.menuItem26.Text = "Ticket";
+            this.scanMenuTicket.Text = "Ticket";
             // 
-            // menuItem27
+            // scanMenuAsset
             // 
-            this.menuItem27.Text = "Asset";
+            this.scanMenuAsset.Text = "Asset";
             // 
-            // menuItem28
+            // scanMenuCustomer
             // 
-            this.menuItem28.Text = "Customer";
+            this.scanMenuCustomer.Text = "Customer";
             // 
             // homeForm
             // 
@@ -250,55 +249,56 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 294);
-            this.Controls.Add(this.inventory);
-            this.Controls.Add(this.assets);
-            this.Controls.Add(this.tickets);
-            this.Controls.Add(this.customers);
+            this.Controls.Add(this.inventoryButton);
+            this.Controls.Add(this.assetsButton);
+            this.Controls.Add(this.ticketsButton);
+            this.Controls.Add(this.customersButton);
             this.Location = new System.Drawing.Point(0, 0);
             this.Menu = this.mainMenu1;
             this.MinimizeBox = false;
             this.Name = "homeForm";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.homeForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button customers;
-        private System.Windows.Forms.Button tickets;
-        private System.Windows.Forms.Button assets;
-        private System.Windows.Forms.Button inventory;
+        private System.Windows.Forms.Button customersButton;
+        private System.Windows.Forms.Button ticketsButton;
+        private System.Windows.Forms.Button assetsButton;
+        private System.Windows.Forms.Button inventoryButton;
         private System.Windows.Forms.MainMenu mainMenu1;
-        private System.Windows.Forms.MenuItem menuItem1;
-        private System.Windows.Forms.MenuItem menuItem2;
-        private System.Windows.Forms.MenuItem menuItem3;
-        private System.Windows.Forms.MenuItem menuItem4;
-        private System.Windows.Forms.MenuItem menuSearchInventory;
-        private System.Windows.Forms.MenuItem menuItem6;
-        private System.Windows.Forms.MenuItem menuItem7;
-        private System.Windows.Forms.MenuItem menuItem8;
+        private System.Windows.Forms.MenuItem menu;
+        private System.Windows.Forms.MenuItem menuTicket;
+        private System.Windows.Forms.MenuItem menuCust;
+        private System.Windows.Forms.MenuItem menuAsset;
+        private System.Windows.Forms.MenuItem menuInventory;
+        private System.Windows.Forms.MenuItem menuEstimate;
+        private System.Windows.Forms.MenuItem menuInvoice;
+        private System.Windows.Forms.MenuItem scanMenu;
         private System.Windows.Forms.MenuItem menuSettings;
-        private System.Windows.Forms.MenuItem menuItem10;
-        private System.Windows.Forms.MenuItem menuItem11;
-        private System.Windows.Forms.MenuItem menuItem15;
-        private System.Windows.Forms.MenuItem menuItem12;
-        private System.Windows.Forms.MenuItem menuItem13;
-        private System.Windows.Forms.MenuItem menuItem14;
-        private System.Windows.Forms.MenuItem menuNewAsset;
-        private System.Windows.Forms.MenuItem menuSearchAsset;
-        private System.Windows.Forms.MenuItem menuListAsset;
-        private System.Windows.Forms.MenuItem menuNewEstimate;
-        private System.Windows.Forms.MenuItem menuSearchEstimate;
-        private System.Windows.Forms.MenuItem menuListEstimate;
-        private System.Windows.Forms.MenuItem menuNewInvoice;
-        private System.Windows.Forms.MenuItem menuSearchInvoice;
-        private System.Windows.Forms.MenuItem menuListInvoice;
+        private System.Windows.Forms.MenuItem menuTicketNew;
+        private System.Windows.Forms.MenuItem menuTicketSearch;
+        private System.Windows.Forms.MenuItem menuTicketList;
+        private System.Windows.Forms.MenuItem menuCustNew;
+        private System.Windows.Forms.MenuItem menuCustSearch;
+        private System.Windows.Forms.MenuItem menuCustList;
+        private System.Windows.Forms.MenuItem menuAssetNew;
+        private System.Windows.Forms.MenuItem menuAssetSearch;
+        private System.Windows.Forms.MenuItem menuAssetList;
+        private System.Windows.Forms.MenuItem menuEstimateNew;
+        private System.Windows.Forms.MenuItem menuEstimateSearch;
+        private System.Windows.Forms.MenuItem menuEstimateList;
+        private System.Windows.Forms.MenuItem menuInvoiceNew;
+        private System.Windows.Forms.MenuItem menuInvoiceSearch;
+        private System.Windows.Forms.MenuItem menuInvoiceList;
         private System.Windows.Forms.MenuItem menuExit;
-        private System.Windows.Forms.MenuItem menuItem26;
-        private System.Windows.Forms.MenuItem menuItem27;
-        private System.Windows.Forms.MenuItem menuItem28;
+        private System.Windows.Forms.MenuItem scanMenuTicket;
+        private System.Windows.Forms.MenuItem scanMenuAsset;
+        private System.Windows.Forms.MenuItem scanMenuCustomer;
     }
 }
 

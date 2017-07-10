@@ -16,10 +16,11 @@ namespace SmartDeviceProject1
             InitializeComponent();
         }
 
-        private void menuExit_Click(object sender, EventArgs e)
+        private void homeForm_Load(object sender, EventArgs e)
         {
 
         }
+
 
     }
 }
