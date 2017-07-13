@@ -21,6 +21,17 @@ namespace SmartDeviceProject1
 
         }
 
+        private void menuSettings_Click(object sender, EventArgs e)
+        {
+            Form settingsForm = new settingsForm();
+            settingsForm.Show();
+        }
+
+        private void menu_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

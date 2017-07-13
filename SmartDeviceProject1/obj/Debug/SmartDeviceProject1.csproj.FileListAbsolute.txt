@@ -14,3 +14,4 @@ C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\Cud
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\CuddlyPancake.exe
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\CuddlyPancake.pdb
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.settingsForm.resources

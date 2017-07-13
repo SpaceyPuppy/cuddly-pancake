@@ -61,6 +61,11 @@
             this.scanMenuTicket = new System.Windows.Forms.MenuItem();
             this.scanMenuAsset = new System.Windows.Forms.MenuItem();
             this.scanMenuCustomer = new System.Windows.Forms.MenuItem();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.menuItem5 = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // customersButton
@@ -68,35 +73,34 @@
             this.customersButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.customersButton.Location = new System.Drawing.Point(22, 216);
             this.customersButton.Name = "customersButton";
-            this.customersButton.Size = new System.Drawing.Size(197, 62);
+            this.customersButton.Size = new System.Drawing.Size(98, 62);
             this.customersButton.TabIndex = 0;
             this.customersButton.Text = "Customers";
             // 
             // ticketsButton
             // 
-            this.ticketsButton.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ticketsButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ticketsButton.Location = new System.Drawing.Point(22, 17);
+            this.ticketsButton.Location = new System.Drawing.Point(22, 148);
             this.ticketsButton.Name = "ticketsButton";
-            this.ticketsButton.Size = new System.Drawing.Size(197, 62);
+            this.ticketsButton.Size = new System.Drawing.Size(98, 62);
             this.ticketsButton.TabIndex = 1;
             this.ticketsButton.Text = "Tickets";
             // 
             // assetsButton
             // 
             this.assetsButton.DialogResult = System.Windows.Forms.DialogResult.Abort;
-            this.assetsButton.Location = new System.Drawing.Point(22, 150);
+            this.assetsButton.Location = new System.Drawing.Point(121, 216);
             this.assetsButton.Name = "assetsButton";
-            this.assetsButton.Size = new System.Drawing.Size(197, 62);
+            this.assetsButton.Size = new System.Drawing.Size(98, 62);
             this.assetsButton.TabIndex = 2;
             this.assetsButton.Text = "Assets";
             // 
             // inventoryButton
             // 
             this.inventoryButton.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.inventoryButton.Location = new System.Drawing.Point(22, 83);
+            this.inventoryButton.Location = new System.Drawing.Point(121, 148);
             this.inventoryButton.Name = "inventoryButton";
-            this.inventoryButton.Size = new System.Drawing.Size(197, 62);
+            this.inventoryButton.Size = new System.Drawing.Size(98, 62);
             this.inventoryButton.TabIndex = 4;
             this.inventoryButton.Text = "Inventory";
             // 
@@ -108,14 +112,20 @@
             // menu
             // 
             this.menu.MenuItems.Add(this.menuTicket);
+            this.menu.MenuItems.Add(this.menuItem1);
             this.menu.MenuItems.Add(this.menuCust);
             this.menu.MenuItems.Add(this.menuAsset);
-            this.menu.MenuItems.Add(this.menuInventory);
-            this.menu.MenuItems.Add(this.menuEstimate);
+            this.menu.MenuItems.Add(this.menuItem3);
             this.menu.MenuItems.Add(this.menuInvoice);
+            this.menu.MenuItems.Add(this.menuEstimate);
+            this.menu.MenuItems.Add(this.menuItem4);
+            this.menu.MenuItems.Add(this.menuInventory);
+            this.menu.MenuItems.Add(this.menuItem2);
             this.menu.MenuItems.Add(this.menuSettings);
+            this.menu.MenuItems.Add(this.menuItem5);
             this.menu.MenuItems.Add(this.menuExit);
             this.menu.Text = "Menu";
+            this.menu.Click += new System.EventHandler(this.menu_Click);
             // 
             // menuTicket
             // 
@@ -219,6 +229,7 @@
             // menuSettings
             // 
             this.menuSettings.Text = "Settings";
+            this.menuSettings.Click += new System.EventHandler(this.menuSettings_Click);
             // 
             // menuExit
             // 
@@ -242,6 +253,26 @@
             // scanMenuCustomer
             // 
             this.scanMenuCustomer.Text = "Customer";
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Text = "-";
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Text = "-";
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Text = "-";
+            // 
+            // menuItem4
+            // 
+            this.menuItem4.Text = "-";
+            // 
+            // menuItem5
+            // 
+            this.menuItem5.Text = "-";
             // 
             // homeForm
             // 
@@ -299,6 +330,11 @@
         private System.Windows.Forms.MenuItem scanMenuTicket;
         private System.Windows.Forms.MenuItem scanMenuAsset;
         private System.Windows.Forms.MenuItem scanMenuCustomer;
+        private System.Windows.Forms.MenuItem menuItem1;
+        private System.Windows.Forms.MenuItem menuItem3;
+        private System.Windows.Forms.MenuItem menuItem4;
+        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MenuItem menuItem5;
     }
 }
 
