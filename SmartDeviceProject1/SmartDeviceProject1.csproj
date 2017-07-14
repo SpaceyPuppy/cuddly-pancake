@@ -90,6 +90,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppData\apiKey.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

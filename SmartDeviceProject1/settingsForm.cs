@@ -9,6 +9,8 @@ using System.Windows.Forms;
 
 namespace SmartDeviceProject1
 {
+
+
     public partial class settingsForm : Form
     {
         public settingsForm()
@@ -16,22 +18,26 @@ namespace SmartDeviceProject1
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string apiKey;
-            apiKey = theKey.Text;
-            MessageBox.Show("This is now your API key: " + apiKey);
-            keyShowBox.Refresh();
+           /* var doc = new XmlDocument();
+            doc.Load(ProgramData/apiKey.xml);
+            var node = doc.SelectSingleNode(@"config/webservices/webservice/value");
+            node.InnerText = theKey.Text;
+            doc.Save(fileName);
+
+            MessageBox.Show("This is now your API key: " + apiKey); */
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private void doneButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
         }
 
-        private void keyShowBox_ParentChanged(object sender, EventArgs e)
+        private void theyKey_TextChanged(object sender, EventArgs e)
         {
-            
+            label3.Text = "Your API Key: ";
         }
 
     }

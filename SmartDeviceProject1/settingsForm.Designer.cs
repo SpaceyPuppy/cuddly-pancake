@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,28 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu1 = new System.Windows.Forms.MainMenu();
-            this.doneButton = new System.Windows.Forms.MenuItem();
             this.theKey = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.CurrentKeyLabel = new System.Windows.Forms.Label();
-            this.keyShowBox = new System.Windows.Forms.Label();
-            this.settingsTabs = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.settingsTabs.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.settingsCtrl = new System.Windows.Forms.TabControl();
+            this.settingsAPI = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.settingsUserAuth = new System.Windows.Forms.TabPage();
+            this.authStatusBar = new System.Windows.Forms.StatusBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.authStatPhrase = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.passBox = new System.Windows.Forms.TextBox();
+            this.passLabel = new System.Windows.Forms.Label();
+            this.userLabel = new System.Windows.Forms.Label();
+            this.userBox = new System.Windows.Forms.TextBox();
+            this.settingsCtrl.SuspendLayout();
+            this.settingsAPI.SuspendLayout();
+            this.settingsUserAuth.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mainMenu1
-            // 
-            this.mainMenu1.MenuItems.Add(this.doneButton);
-            // 
-            // doneButton
-            // 
-            this.doneButton.Text = "Done";
             // 
             // theKey
             // 
@@ -64,8 +60,8 @@
             // 
             this.label1.Location = new System.Drawing.Point(3, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 20);
-            this.label1.Text = "New API Key:";
+            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.Text = "API Key:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
@@ -77,71 +73,127 @@
             this.button1.Text = "Save Key";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // CurrentKeyLabel
+            // settingsCtrl
             // 
-            this.CurrentKeyLabel.Location = new System.Drawing.Point(84, 159);
-            this.CurrentKeyLabel.Name = "CurrentKeyLabel";
-            this.CurrentKeyLabel.Size = new System.Drawing.Size(100, 20);
-            this.CurrentKeyLabel.Text = "Current Key:";
+            this.settingsCtrl.Controls.Add(this.settingsAPI);
+            this.settingsCtrl.Controls.Add(this.settingsUserAuth);
+            this.settingsCtrl.Location = new System.Drawing.Point(0, 0);
+            this.settingsCtrl.Name = "settingsCtrl";
+            this.settingsCtrl.SelectedIndex = 0;
+            this.settingsCtrl.Size = new System.Drawing.Size(240, 294);
+            this.settingsCtrl.TabIndex = 4;
+            this.settingsCtrl.Tag = "";
             // 
-            // keyShowBox
+            // settingsAPI
             // 
-            this.keyShowBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.keyShowBox.Location = new System.Drawing.Point(4, 179);
-            this.keyShowBox.Name = "keyShowBox";
-            this.keyShowBox.Size = new System.Drawing.Size(233, 54);
-            this.keyShowBox.ParentChanged += new System.EventHandler(this.keyShowBox_ParentChanged);
+            this.settingsAPI.Controls.Add(this.label3);
+            this.settingsAPI.Controls.Add(this.label1);
+            this.settingsAPI.Controls.Add(this.button1);
+            this.settingsAPI.Controls.Add(this.theKey);
+            this.settingsAPI.Location = new System.Drawing.Point(0, 0);
+            this.settingsAPI.Name = "settingsAPI";
+            this.settingsAPI.Size = new System.Drawing.Size(240, 271);
+            this.settingsAPI.Text = "API";
             // 
-            // settingsTabs
+            // label3
             // 
-            this.settingsTabs.Controls.Add(this.tabPage1);
-            this.settingsTabs.Controls.Add(this.tabPage2);
-            this.settingsTabs.Controls.Add(this.tabPage3);
-            this.settingsTabs.Location = new System.Drawing.Point(0, 0);
-            this.settingsTabs.Name = "settingsTabs";
-            this.settingsTabs.SelectedIndex = 0;
-            this.settingsTabs.Size = new System.Drawing.Size(240, 268);
-            this.settingsTabs.TabIndex = 4;
-            this.settingsTabs.Tag = "";
+            this.label3.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular);
+            this.label3.Location = new System.Drawing.Point(8, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(225, 74);
+            this.label3.Text = "label3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.TextChanged += new System.EventHandler(this.theyKey_TextChanged);
             // 
-            // tabPage1
+            // settingsUserAuth
             // 
-            this.tabPage1.Controls.Add(this.CurrentKeyLabel);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.theKey);
-            this.tabPage1.Controls.Add(this.keyShowBox);
-            this.tabPage1.Location = new System.Drawing.Point(0, 0);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(240, 245);
-            this.tabPage1.Text = "tabPage1";
+            this.settingsUserAuth.Controls.Add(this.authStatusBar);
+            this.settingsUserAuth.Controls.Add(this.label2);
+            this.settingsUserAuth.Controls.Add(this.authStatPhrase);
+            this.settingsUserAuth.Controls.Add(this.button2);
+            this.settingsUserAuth.Controls.Add(this.passBox);
+            this.settingsUserAuth.Controls.Add(this.passLabel);
+            this.settingsUserAuth.Controls.Add(this.userLabel);
+            this.settingsUserAuth.Controls.Add(this.userBox);
+            this.settingsUserAuth.Location = new System.Drawing.Point(0, 0);
+            this.settingsUserAuth.Name = "settingsUserAuth";
+            this.settingsUserAuth.Size = new System.Drawing.Size(232, 268);
+            this.settingsUserAuth.Text = "User Authentication";
             // 
-            // tabPage2
+            // authStatusBar
             // 
-            this.tabPage2.Location = new System.Drawing.Point(0, 0);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(240, 245);
-            this.tabPage2.Text = "tabPage2";
+            this.authStatusBar.Location = new System.Drawing.Point(0, 246);
+            this.authStatusBar.Name = "authStatusBar";
+            this.authStatusBar.Size = new System.Drawing.Size(232, 22);
+            this.authStatusBar.Text = "authStatus";
             // 
-            // tabPage3
+            // label2
             // 
-            this.tabPage3.Location = new System.Drawing.Point(0, 0);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(240, 245);
-            this.tabPage3.Text = "tabPage3";
+            this.label2.Font = new System.Drawing.Font("Courier New", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label2.Location = new System.Drawing.Point(178, 197);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.Text = "OK";
+            // 
+            // authStatPhrase
+            // 
+            this.authStatPhrase.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular);
+            this.authStatPhrase.Location = new System.Drawing.Point(3, 197);
+            this.authStatPhrase.Name = "authStatPhrase";
+            this.authStatPhrase.Size = new System.Drawing.Size(168, 20);
+            this.authStatPhrase.Text = "Authentication Status:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(38, 154);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(164, 39);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Login to RepairShopr";
+            // 
+            // passBox
+            // 
+            this.passBox.Location = new System.Drawing.Point(38, 120);
+            this.passBox.Name = "passBox";
+            this.passBox.Size = new System.Drawing.Size(164, 21);
+            this.passBox.TabIndex = 2;
+            // 
+            // passLabel
+            // 
+            this.passLabel.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular);
+            this.passLabel.Location = new System.Drawing.Point(38, 91);
+            this.passLabel.Name = "passLabel";
+            this.passLabel.Size = new System.Drawing.Size(164, 26);
+            this.passLabel.Text = "Password:";
+            this.passLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // userLabel
+            // 
+            this.userLabel.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular);
+            this.userLabel.Location = new System.Drawing.Point(38, 29);
+            this.userLabel.Name = "userLabel";
+            this.userLabel.Size = new System.Drawing.Size(164, 26);
+            this.userLabel.Text = "User:";
+            // 
+            // userBox
+            // 
+            this.userBox.Location = new System.Drawing.Point(38, 58);
+            this.userBox.Name = "userBox";
+            this.userBox.Size = new System.Drawing.Size(164, 21);
+            this.userBox.TabIndex = 0;
             // 
             // settingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 268);
-            this.Controls.Add(this.settingsTabs);
-            this.Menu = this.mainMenu1;
+            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.Controls.Add(this.settingsCtrl);
             this.Name = "settingsForm";
             this.Text = "Settings";
-            this.settingsTabs.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.settingsCtrl.ResumeLayout(false);
+            this.settingsAPI.ResumeLayout(false);
+            this.settingsUserAuth.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -151,12 +203,17 @@
         private System.Windows.Forms.TextBox theKey;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label CurrentKeyLabel;
-        private System.Windows.Forms.Label keyShowBox;
-        private System.Windows.Forms.MenuItem doneButton;
-        private System.Windows.Forms.TabControl settingsTabs;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabControl settingsCtrl;
+        private System.Windows.Forms.TabPage settingsAPI;
+        private System.Windows.Forms.TabPage settingsUserAuth;
+        private System.Windows.Forms.Label passLabel;
+        private System.Windows.Forms.Label userLabel;
+        private System.Windows.Forms.TextBox userBox;
+        private System.Windows.Forms.TextBox passBox;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label authStatPhrase;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.StatusBar authStatusBar;
+        private System.Windows.Forms.Label label3;
     }
 }

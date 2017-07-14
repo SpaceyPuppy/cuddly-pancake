@@ -1,0 +1,5 @@
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Release\SmartDeviceProject1.settingsForm.resources
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Release\SmartDeviceProject1.homeForm.resources
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Release\CuddlyPancake.Properties.Resources.resources
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Release\SmartDeviceProject1.csproj.GenerateResource.Cache
