@@ -11,14 +11,13 @@ using System.IO;
 namespace SmartDeviceProject1
 {
 
-    public partial class settingsForm : Form
+    public partial class settingsForm:Form
     {
         public settingsForm()
         {
             InitializeComponent();
         }
-
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             /*<summary>
@@ -32,38 +31,57 @@ namespace SmartDeviceProject1
             string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
 
             //Now I'll try to get the text file contents to show in a MessageBox
-            var keySave = MessageBox.Show(TEXT; //DO THIS ASDASDASDGHASDGHSDFASDHFASDHFASDHFASDFHADSFHASDFHADFHFASDF           
+            var keySave = MessageBox.Show(apiKey + " - Is this the correct API key to use?",
+                "API Key Correct?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             
-            // this will show a question mark icon in a blue circle.
-
-                        //the following can also be handled as a if/else for simplicity, I chose to cover all bases
-
-            switch(keySave)
+            //this could also be an if/else, but that code didn't work and this did, tbh. 
+            switch (keySave)
             {
-                case DialogResult.Yes:                      //yes pressed
-                    MessageBox.Show("Key saved.", "Key Saved.");          //this shows a dialog telling the user it saved
-                                                            //the following actually saves/overwrites the key
-                    using(StreamWriter outputFile = new StreamWriter(filePath + @"\APIkey.txt")) {
+                case DialogResult.Yes:
+                    using (StreamWriter outputFile = new StreamWriter(filePath + @"\APIkey.txt"))
+                    {
                         outputFile.WriteLine(apiKey);
                     }
+                    MessageBox.Show("API key set!","Key Set",MessageBoxButtons.OK,MessageBoxIcon.Asterisk,MessageBoxDefaultButton.Button1);
+                    break;
 
+                case DialogResult.No:
+                    MessageBox.Show("Please check your API key","Check Key",MessageBoxButtons.OK,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button1);
+                    break;
             }
+          
 
             /* string apiKey = Convert.ToString(GlobalStrings.APIKey);
             apiKey = theKey.Text;
             MessageBox.Show("This is now your API key: " + apiKey);
             keyShowBox.Refresh(); */
         }
-
+        
         private void doneButton_Click(object sender, EventArgs e)
         {
-            Hide();
+            settingsForm frm1 = new settingsForm();
+            frm1.Hide();
         }
 
-        private void theyKey_TextChanged(object sender, EventArgs e)
+        private void theKey_TextChanged(object sender, EventArgs e)
         {
-            label3.Text = "Your API Key: ";
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+
         }
 
+        private void clrKeyBox_Click(object sender, EventArgs e)
+        {
+            theKey.Text = String.Empty;
+        }
+
+        /*private void label3_ParentChanged(object sender, EventArgs e)
+        {
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+            TextReader reder = File.OpenText(filePath + @"\APIkey.txt");
+            label3.Text = reder.ReadToEnd();
+        }
+        */  //TODO: fix the FILEPATH to a documents path instead, that'd be good.
+            //TODO: get this working :(
+            //TODO: THAT IS ALL :D
     }
 }
