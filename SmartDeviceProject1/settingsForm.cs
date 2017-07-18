@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 
 namespace SmartDeviceProject1
-{
+    {
 
     public partial class settingsForm:Form
     {
@@ -28,8 +28,9 @@ namespace SmartDeviceProject1
             string apiKey = theKey.Text;
             
             //this finds the path of AppData on the device and creates a string for us with the path called filePath
-            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
-
+            //string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+            string filePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+            
             //Now I'll try to get the text file contents to show in a MessageBox
             var keySave = MessageBox.Show(apiKey + " - Is this the correct API key to use?",
                 "API Key Correct?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
@@ -50,38 +51,37 @@ namespace SmartDeviceProject1
                     break;
             }
           
-
-            /* string apiKey = Convert.ToString(GlobalStrings.APIKey);
-            apiKey = theKey.Text;
-            MessageBox.Show("This is now your API key: " + apiKey);
-            keyShowBox.Refresh(); */
-        }
+        } //
         
         private void doneButton_Click(object sender, EventArgs e)
         {
-            settingsForm frm1 = new settingsForm();
-            frm1.Hide();
-        }
 
-        private void theKey_TextChanged(object sender, EventArgs e)
-        {
-            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+        } //does nothing ? use ok button
 
-        }
 
         private void clrKeyBox_Click(object sender, EventArgs e)
         {
             theKey.Text = String.Empty;
+        } //clears the key box to type again
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string filePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+
+            if (File.Exists(filePath + @"\APIkey.txt"))
+            {
+                using (TextReader reder = File.OpenText(filePath + @"\APIkey.txt"))
+                {
+                    label3.Text = reder.ReadToEnd();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No API key set. Please set one using the box above.");
+            }
+            //refresh current key screen
         }
 
-        /*private void label3_ParentChanged(object sender, EventArgs e)
-        {
-            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
-            TextReader reder = File.OpenText(filePath + @"\APIkey.txt");
-            label3.Text = reder.ReadToEnd();
-        }
-        */  //TODO: fix the FILEPATH to a documents path instead, that'd be good.
-            //TODO: get this working :(
-            //TODO: THAT IS ALL :D
+        //TECHNICIAN PAGE CODE BELOW THIS LINE
     }
 }
