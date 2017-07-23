@@ -38,8 +38,10 @@
             this.clrKeyBox = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.settingsTechID = new System.Windows.Forms.TabPage();
+            this.testSendButton = new System.Windows.Forms.Button();
             this.settingsCtrl.SuspendLayout();
             this.settingsAPI.SuspendLayout();
+            this.settingsTechID.SuspendLayout();
             this.SuspendLayout();
             // 
             // theKey
@@ -137,10 +139,20 @@
             // settingsTechID
             // 
             this.settingsTechID.BackColor = System.Drawing.Color.White;
+            this.settingsTechID.Controls.Add(this.testSendButton);
             this.settingsTechID.Location = new System.Drawing.Point(0, 0);
             this.settingsTechID.Name = "settingsTechID";
             this.settingsTechID.Size = new System.Drawing.Size(240, 271);
             this.settingsTechID.Text = "Technician";
+            // 
+            // testSendButton
+            // 
+            this.testSendButton.Location = new System.Drawing.Point(62, 79);
+            this.testSendButton.Name = "testSendButton";
+            this.testSendButton.Size = new System.Drawing.Size(107, 20);
+            this.testSendButton.TabIndex = 0;
+            this.testSendButton.Text = "Send Test Req.";
+            this.testSendButton.Click += new System.EventHandler(this.testSendButton_Click);
             // 
             // settingsForm
             // 
@@ -155,6 +167,7 @@
             this.Text = "Settings";
             this.settingsCtrl.ResumeLayout(false);
             this.settingsAPI.ResumeLayout(false);
+            this.settingsTechID.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -171,5 +184,6 @@
         private System.Windows.Forms.Button clrKeyBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button testSendButton;
     }
 }

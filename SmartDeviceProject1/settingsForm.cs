@@ -11,13 +11,13 @@ using System.IO;
 namespace SmartDeviceProject1
     {
 
-    public partial class settingsForm:Form
+    public partial class settingsForm : Form
     {
         public settingsForm()
         {
             InitializeComponent();
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             /*<summary>
@@ -26,15 +26,15 @@ namespace SmartDeviceProject1
 
             //this creates the apiKey string from the key that was typed in the textbox on Settings
             string apiKey = theKey.Text;
-            
+
             //this finds the path of AppData on the device and creates a string for us with the path called filePath
             //string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
             string filePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
-            
+
             //Now I'll try to get the text file contents to show in a MessageBox
             var keySave = MessageBox.Show(apiKey + " - Is this the correct API key to use?",
                 "API Key Correct?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            
+
             //this could also be an if/else, but that code didn't work and this did, tbh. 
             switch (keySave)
             {
@@ -43,16 +43,16 @@ namespace SmartDeviceProject1
                     {
                         outputFile.WriteLine(apiKey);
                     }
-                    MessageBox.Show("API key set!","Key Set",MessageBoxButtons.OK,MessageBoxIcon.Asterisk,MessageBoxDefaultButton.Button1);
+                    MessageBox.Show("API key set!", "Key Set", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
                     break;
 
                 case DialogResult.No:
-                    MessageBox.Show("Please check your API key","Check Key",MessageBoxButtons.OK,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button1);
+                    MessageBox.Show("Please check your API key", "Check Key", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                     break;
             }
-          
+
         } //
-        
+
         private void doneButton_Click(object sender, EventArgs e)
         {
 
@@ -83,5 +83,10 @@ namespace SmartDeviceProject1
         }
 
         //TECHNICIAN PAGE CODE BELOW THIS LINE
+
+        private void testSendButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
