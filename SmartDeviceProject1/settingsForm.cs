@@ -13,11 +13,6 @@ using Newtonsoft.Json;
 namespace SmartDeviceProject1
     {
 
-    public class apiKey
-    {
-        public string apikey { get; set; }
-    }
-
 
     public partial class settingsForm : Form
     {
@@ -111,6 +106,10 @@ namespace SmartDeviceProject1
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(address);
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
+                WebResponse ws = request.GetResponse();
+
+                
+
                 using (StreamReader read = new StreamReader(response.GetResponseStream()))
                 {
                     apiResponse.Text = read.ReadToEnd();
@@ -122,6 +121,11 @@ namespace SmartDeviceProject1
             {
                 MessageBox.Show("Key not found! Please set one in Settings > API.", "Key does not exist. :(", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
             }
+        }
+
+        public class apiKey
+        {
+            public string apikey { get; set; }
         }
 
         private void apiResponse_ParentChanged(object sender, EventArgs e)

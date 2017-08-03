@@ -32,6 +32,11 @@ namespace SmartDeviceProject1
 
         }
 
+        private void ticketsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

@@ -14,7 +14,7 @@ C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\RS_
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\RS_Companion.exe
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\RS_Companion.pdb
-C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.apiKey.resources
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.dll
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.pdb
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.xml
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.settingsForm.resources
