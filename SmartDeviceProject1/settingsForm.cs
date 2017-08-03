@@ -7,6 +7,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
+using System.Web.Extensions;
+using Newtonsoft.Json
 
 namespace SmartDeviceProject1
     {
@@ -79,12 +82,39 @@ namespace SmartDeviceProject1
             {
                 MessageBox.Show("No API key set. Please set one using the box above.");
             }
-            //refresh current key screen
-        }
+
+        }  //refresh API key display
 
         //TECHNICIAN PAGE CODE BELOW THIS LINE
 
         private void testSendButton_Click(object sender, EventArgs e)
+        {
+            StreamReader sr = new StreamReader(@"\APIkey.txt");
+            var apiKey = sr.ReadToEnd();
+                                                    // set this address to whatever, /me /leads etc
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://chrisphelan.repairshopr.com/api/v1/me");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "GET";  // ****CHANGE TO POST/GET/PUT ETC*****
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {    //set json variables under apiKey below
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    apiKey = apiKey
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                //set the label box to the output of the API
+                apiResponse.Text = streamReader.ReadToEnd();
+            }
+        }
+
+        private void apiResponse_ParentChanged(object sender, EventArgs e)
         {
 
         }

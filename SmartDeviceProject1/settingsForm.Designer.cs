@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.settingsTechID = new System.Windows.Forms.TabPage();
             this.testSendButton = new System.Windows.Forms.Button();
+            this.apiResponse = new System.Windows.Forms.Label();
             this.settingsCtrl.SuspendLayout();
             this.settingsAPI.SuspendLayout();
             this.settingsTechID.SuspendLayout();
@@ -139,6 +140,7 @@
             // settingsTechID
             // 
             this.settingsTechID.BackColor = System.Drawing.Color.White;
+            this.settingsTechID.Controls.Add(this.apiResponse);
             this.settingsTechID.Controls.Add(this.testSendButton);
             this.settingsTechID.Location = new System.Drawing.Point(0, 0);
             this.settingsTechID.Name = "settingsTechID";
@@ -147,12 +149,20 @@
             // 
             // testSendButton
             // 
-            this.testSendButton.Location = new System.Drawing.Point(62, 79);
+            this.testSendButton.Location = new System.Drawing.Point(60, 7);
             this.testSendButton.Name = "testSendButton";
             this.testSendButton.Size = new System.Drawing.Size(107, 20);
             this.testSendButton.TabIndex = 0;
             this.testSendButton.Text = "Send Test Req.";
             this.testSendButton.Click += new System.EventHandler(this.testSendButton_Click);
+            // 
+            // apiResponse
+            // 
+            this.apiResponse.Location = new System.Drawing.Point(8, 61);
+            this.apiResponse.Name = "apiResponse";
+            this.apiResponse.Size = new System.Drawing.Size(225, 200);
+            this.apiResponse.Text = "label2";
+            this.apiResponse.ParentChanged += new System.EventHandler(this.apiResponse_ParentChanged);
             // 
             // settingsForm
             // 
@@ -185,5 +195,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button testSendButton;
+        private System.Windows.Forms.Label apiResponse;
     }
 }
