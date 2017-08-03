@@ -8,11 +8,16 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
-using System.Web.Extensions;
-using Newtonsoft.Json
+using Newtonsoft.Json;
 
 namespace SmartDeviceProject1
     {
+
+    public class apiKey
+    {
+        public string apikey { get; set; }
+    }
+
 
     public partial class settingsForm : Form
     {
@@ -89,28 +94,33 @@ namespace SmartDeviceProject1
 
         private void testSendButton_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader(@"\APIkey.txt");
-            var apiKey = sr.ReadToEnd();
-                                                    // set this address to whatever, /me /leads etc
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://chrisphelan.repairshopr.com/api/v1/me");
-            httpWebRequest.ContentType = "application/json";
-            httpWebRequest.Method = "GET";  // ****CHANGE TO POST/GET/PUT ETC*****
+            string filePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
 
-            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-            {    //set json variables under apiKey below
-                string json = new JavaScriptSerializer().Serialize(new
-                {
-                    apiKey = apiKey
-                });
-
-                streamWriter.Write(json);
-            }
-
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            if (File.Exists(filePath + @"\APIkey.txt"))
             {
-                //set the label box to the output of the API
-                apiResponse.Text = streamReader.ReadToEnd();
+                MessageBox.Show("Key exists. Continuing...", "Key found.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
+
+                string apiKey = string.Empty;
+                using (StreamReader sr = new StreamReader(filePath + @"\APIkey.txt"))
+                {
+                    apiKey = sr.ReadToEnd();
+                }
+
+                string address = "http://chrisphelan.repairshopr.com/api/v1/me?api_key=" + apiKey ;
+
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(address);
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                using (StreamReader read = new StreamReader(response.GetResponseStream()))
+                {
+                    apiResponse.Text = read.ReadToEnd();
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("Key not found! Please set one in Settings > API.", "Key does not exist. :(", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
             }
         }
 

@@ -9,9 +9,12 @@ C:\Users\chris\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDe
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.homeForm.resources
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
-C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.settingsForm.resources
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\RS_Companion.exe
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\RS_Companion.pdb
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\RS_Companion.exe
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\RS_Companion.pdb
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.apiKey.resources
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.dll
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.pdb
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.xml
