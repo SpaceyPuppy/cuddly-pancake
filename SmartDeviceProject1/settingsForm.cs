@@ -103,19 +103,27 @@ namespace SmartDeviceProject1
 
                 string address = "http://chrisphelan.repairshopr.com/api/v1/me?api_key=" + apiKey ;
 
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(address);
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
-                WebResponse ws = request.GetResponse();
-
-                
-
-                using (StreamReader read = new StreamReader(response.GetResponseStream()))
+                try
                 {
-                    apiResponse.Text = read.ReadToEnd();
+                    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(address);
+                    HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                    WebResponse ws = request.GetResponse();
+
+                    using (StreamReader read = new StreamReader(response.GetResponseStream()))
+                    {
+                        apiResponse.Text = read.ReadToEnd();
+                    }
+
+
                 }
-
-
+                catch (WebException ex)
+                {
+                    MessageBox.Show("Are you sure you connected to the internet this morning? Check your connection and try again.","No internet connection",MessageBoxButtons.OK,MessageBoxIcon.Question,MessageBoxDefaultButton.Button1);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error has occured");
+                }
             }
             else
             {
