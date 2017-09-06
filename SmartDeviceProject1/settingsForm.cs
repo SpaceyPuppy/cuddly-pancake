@@ -95,13 +95,13 @@ namespace SmartDeviceProject1
             {
                 MessageBox.Show("Key exists. Continuing...", "Key found.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
 
-                string apiKey = string.Empty;
+                /* string apiKey = string.Empty;
                 using (StreamReader sr = new StreamReader(filePath + @"\APIkey.txt"))
                 {
                     apiKey = sr.ReadToEnd();
-                }
+                } */
 
-                string address = "http://chrisphelan.repairshopr.com/api/v1/me?api_key=" + apiKey ;
+                string address = "http://chrisphelan.repairshopr.com/api/v1/me?api_key=901c86f7-5e17-4fc9-896e-754a666b2b83";
 
                 try
                 {
@@ -119,7 +119,7 @@ namespace SmartDeviceProject1
                 }
                 catch (WebException ex)
                 {
-                    MessageBox.Show("Message:" + ex.Message + "\n" + "Check your internet connection, API key, and try again, or contact internal support." ,ex.Status,MessageBoxButtons.OK);
+                    MessageBox.Show("Message:" + ex.Message + "\n" + "Check your internet connection, API key, and try again, or contact internal support." , "Error" , MessageBoxButtons.OK, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 }
                 catch (Exception ex)
                 {
