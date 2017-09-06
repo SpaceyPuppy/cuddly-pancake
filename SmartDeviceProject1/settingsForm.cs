@@ -112,13 +112,14 @@ namespace SmartDeviceProject1
                     using (StreamReader read = new StreamReader(response.GetResponseStream()))
                     {
                         apiResponse.Text = read.ReadToEnd();
+                        apiResponse.Refresh();
                     }
 
 
                 }
                 catch (WebException ex)
                 {
-                    MessageBox.Show("Are you sure you connected to the internet this morning? Check your connection and try again.","No internet connection",MessageBoxButtons.OK,MessageBoxIcon.Question,MessageBoxDefaultButton.Button1);
+                    MessageBox.Show("Message:" + ex.Message + "\n" + "Check your internet connection, API key, and try again, or contact internal support." ,ex.Status,MessageBoxButtons.OK);
                 }
                 catch (Exception ex)
                 {

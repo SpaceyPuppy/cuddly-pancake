@@ -18,3 +18,4 @@ C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\New
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.pdb
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\bin\Debug\Newtonsoft.Json.Compact.xml
 C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.settingsForm.resources
+C:\Users\chris\Documents\GitHub\cuddly-pancake\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.searchForm.resources

@@ -66,12 +66,13 @@
             this.scanMenuTicket = new System.Windows.Forms.MenuItem();
             this.scanMenuAsset = new System.Windows.Forms.MenuItem();
             this.scanMenuCustomer = new System.Windows.Forms.MenuItem();
+            this.searchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // customersButton
             // 
             this.customersButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.customersButton.Location = new System.Drawing.Point(22, 216);
+            this.customersButton.Location = new System.Drawing.Point(22, 196);
             this.customersButton.Name = "customersButton";
             this.customersButton.Size = new System.Drawing.Size(98, 62);
             this.customersButton.TabIndex = 0;
@@ -80,7 +81,7 @@
             // ticketsButton
             // 
             this.ticketsButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ticketsButton.Location = new System.Drawing.Point(22, 148);
+            this.ticketsButton.Location = new System.Drawing.Point(22, 128);
             this.ticketsButton.Name = "ticketsButton";
             this.ticketsButton.Size = new System.Drawing.Size(98, 62);
             this.ticketsButton.TabIndex = 1;
@@ -90,7 +91,7 @@
             // assetsButton
             // 
             this.assetsButton.DialogResult = System.Windows.Forms.DialogResult.Abort;
-            this.assetsButton.Location = new System.Drawing.Point(121, 216);
+            this.assetsButton.Location = new System.Drawing.Point(121, 196);
             this.assetsButton.Name = "assetsButton";
             this.assetsButton.Size = new System.Drawing.Size(98, 62);
             this.assetsButton.TabIndex = 2;
@@ -99,7 +100,7 @@
             // inventoryButton
             // 
             this.inventoryButton.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.inventoryButton.Location = new System.Drawing.Point(121, 148);
+            this.inventoryButton.Location = new System.Drawing.Point(121, 128);
             this.inventoryButton.Name = "inventoryButton";
             this.inventoryButton.Size = new System.Drawing.Size(98, 62);
             this.inventoryButton.TabIndex = 4;
@@ -275,23 +276,36 @@
             // 
             this.scanMenuCustomer.Text = "Customer";
             // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.Lime;
+            this.searchButton.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            this.searchButton.Location = new System.Drawing.Point(22, 12);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(197, 50);
+            this.searchButton.TabIndex = 5;
+            this.searchButton.Text = "Search";
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
             // homeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(257, 268);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.inventoryButton);
             this.Controls.Add(this.assetsButton);
             this.Controls.Add(this.ticketsButton);
             this.Controls.Add(this.customersButton);
-            this.Location = new System.Drawing.Point(0, 0);
+            this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.MinimizeBox = false;
             this.Name = "homeForm";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.homeForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.homeForm_KeyDown);
             this.ResumeLayout(false);
 
         }
@@ -336,6 +350,7 @@
         private System.Windows.Forms.MenuItem menuItem4;
         private System.Windows.Forms.MenuItem menuItem2;
         private System.Windows.Forms.MenuItem menuItem5;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 

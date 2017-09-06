@@ -37,6 +37,37 @@ namespace SmartDeviceProject1
 
         }
 
+        private void homeForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode == System.Windows.Forms.Keys.Up))
+            {
+                // Up
+            }
+            if ((e.KeyCode == System.Windows.Forms.Keys.Down))
+            {
+                // Down
+            }
+            if ((e.KeyCode == System.Windows.Forms.Keys.Left))
+            {
+                // Left
+            }
+            if ((e.KeyCode == System.Windows.Forms.Keys.Right))
+            {
+                // Right
+            }
+            if ((e.KeyCode == System.Windows.Forms.Keys.Enter))
+            {
+                // Enter
+            }
+
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            Form frm = new searchForm();
+            frm.Show();
+        }
+
 
     }
 }
